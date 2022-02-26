@@ -10,6 +10,7 @@ class Game(Frame):
         self.master.title("2048")
         self.config(bg="#14213d")
         self.master.resizable(False, False)
+        self.master.iconbitmap("icon.ico")
         self.main_grid = Frame(self, bg=c.GRID_COLOR, bd=3, width=400, height=400)
         self.main_grid.grid(pady=(100, 0))  # creating the grid
         self.make_GUI()
